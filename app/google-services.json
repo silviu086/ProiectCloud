@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "501717044049",
+    "firebase_url": "https://proiect-cloud-d0134.firebaseio.com",
+    "project_id": "proiect-cloud-d0134",
+    "storage_bucket": "proiect-cloud-d0134.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501717044049:android:d08d14eb1292d340",
+        "android_client_info": {
+          "package_name": "com.example.silviu.proiectcloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501717044049-pugq8o5uvo2nua9tnsp2uve473fqdmdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCngIg1beynGfv6yR0FUkbxF5SvMo_gjcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

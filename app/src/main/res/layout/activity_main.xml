@@ -1,0 +1,233 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context="com.example.silviu.proiectcloud.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/linearLayoutSearch">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="8dp"
+                android:background="#da332e"
+                android:id="@+id/linearLayoutLocatii">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/shape2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape3"
+                        android:src="@drawable/address"
+                        android:padding="5dp"
+                        android:id="@+id/imageViewSosire" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="introduceti locatia..."
+                        android:ems="10"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/shape2"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:id="@+id/editTextLocatie" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-51dp"
+                        android:background="@drawable/shape3"
+                        android:gravity="center_vertical">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/mylocation"
+
+                            android:id="@+id/imageButtonMyLocation" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="3dp"
+                android:background="@drawable/shape7">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageViewMap"
+                    android:src="@drawable/map_background"/>
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    tools:layout="@layout/dummy_mapviewfragment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/shape7"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Lat"
+                    android:padding="5dp"
+                    android:textColor="@color/colorGray"
+                    android:id="@+id/textView69" />
+
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="-"
+                    android:textColor="@color/colorGray"
+                    android:singleLine="true"
+                    android:id="@+id/textViewLat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Long"
+                    android:textColor="@color/colorGray"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/textView76" />
+
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="-"
+                    android:textColor="@color/colorGray"
+                    android:singleLine="true"
+                    android:id="@+id/textViewLong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/shadow">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:id="@+id/linearLayoutCauta">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="AFISARE VREME"
+                    android:background="#ff822e"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/buttonCauta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/linearLayoutFiltre">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Filtre"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:background="#4ca1ea"
+                    android:id="@+id/textView12" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:background="@drawable/shape7">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
